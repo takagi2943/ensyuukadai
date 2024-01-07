@@ -1,0 +1,33 @@
+.flex {
+  background-color: #00c7ce;
+  height: 50vh; /*vhは高さの指定方法の一種100vhでウィンドウサイズ*/
+  padding: 10px;
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: flex-end;
+  /*align-self: auto;*/
+}
+.flex > div {
+  background-color: #fff;
+  margin: 5px;
+  font-size: 30px;
+}
+.flex > :first-child {
+  margin-right: auto;
+}
+/*.flex > div {*/
+/*  width: 300px;*/
+/*  flex-basis: 100px;*/
+/*}*/
+/*.flex > div:nth-child(1) {*/
+/*  flex-shrink: 0;*/
+/*}*/
+/*.flex > div:nth-child(2) {*/
+/*  align-self: flex-start;*/
+/*}*/
+/*.flex > div:nth-child(3) {*/
+/*  flex-shrink: 2;*/
+/*}*/
+/*.flex > div:nth-child(4) {*/
+/*  flex-shrink: 3;*/
+/*}*/
