@@ -1,9 +1,50 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <meta charset="UTF-8" />
-  <meta mame="viewport" content="width=devie-width,inital-scale=1">
-  <style></style>
-    <table>
+  <head> 
+    <meta charset="UTF-8" />
+    <meta mame="viewport" content="width=devie-width,inital-scale=1">
+   
+    <style>
+      table.is_border {
+        width: 90%;
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      
+      table.is_border tfoot {
+        background-color: #ddd;
+      }
+      
+      table.is_border thead {
+        background-color: #ddd;
+        text-align: center;
+      }
+      
+      table.is_border th {
+        border-width: 1px 1px 0;
+        padding: 10px;
+        border-style: solid;
+        border-color: #aaa;
+      }
+      
+      table.is_border td {
+        border-width: 1px 1px 0;
+        padding: 10px;
+        border-style: solid;
+        border-color: #aaa;
+      }
+      tadle.is_border tr:last-child td {
+        border-width: 1px;
+      }
+      
+      td.is_num {
+        text-align: right;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <table class="is_border">
       <thead>
         <tr>
           <th>注文日</th>
@@ -18,39 +59,39 @@
         <tr>
           <td>2023/08/31 14:47:01</td>
           <td> 難破 専太</td>
-          <td>イチゴショート</td>
-          <td>4</td>
-          <td>441円</td>
-          <td>1,764円</td>
+          <td>いちごショート</td>
+          <td class="is_num">4</td>
+          <td class="is_num">441円</td>
+          <td class="is_num">1,764円</td>
         </tr>
         <tr>
           <td>2023/08/31 14:45:31</td>
           <td>六本木 一</td>
           <td>ジャムサンドクッキー</td>
-          <td>1</td>
-          <td>1,320円</td>
-          <td>1,320円</td>
+          <td class="is_num">1</td>
+          <td class="is_num">1,320円</td>
+          <td class="is_num">1,320円</td>
         </tr>
         <tr>
           <td rowspan="2">2023/08/31 14:45:01</td>
           <td rowspan="2">新宿 大郎</td>
           <td>モンブラン</td>
-          <td>1</td>
-          <td>550円</td>
-          <td>550円</td>
+          <td class="is_num">1</td>
+          <td class="is_num">550円</td>
+          <td class="is_num">550円</td>
         </tr>
         <tr>
           <td>レモンクッキー</td>
-          <td>1</td>
-          <td>441円</td>
-          <td>441円</td>
+          <td class="is_num">1</td>
+          <td class="is_num">441円</td>
+          <td class="is_num">441円</td>
         </tr>
         </tbody>
         <tfoot>
          <tr>
           <td colspan="5">合計</td>
-          <td>6,475円</td>
+          <td class="is_num">6,475円</td>
          </tr>
         </tfoot>
-      </html>
-      <!--tesuto-->
+      </body>
+    </html>
